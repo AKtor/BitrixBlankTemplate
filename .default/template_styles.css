@@ -1,0 +1,148 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/* --- start: Delete this when using Bootstrap 3 ---------------------------- */
+
+.text-left {text-align: left;}
+.text-right {text-align: right;}
+.text-center {text-align: center;}
+.text-justify {text-align: justify;}
+.text-nowrap {white-space: nowrap;}
+.text-lowercase {text-transform: lowercase;}
+.text-uppercase {text-transform: uppercase;}
+.text-capitalize {text-transform: capitalize;}
+
+.center-block {display: block; margin-right: auto; margin-left: auto;}
+.pull-right {float: right !important;}
+.pull-left {float: left !important;}
+.hide {display: none !important;}
+.show {display: block !important;}
+.invisible {visibility: hidden;}
+.text-hide {font: 0/0 a; color: transparent; text-shadow: none; background-color: transparent; border: 0;}
+
+.clearfix:before,.clearfix:after {display: table; content: " ";} .clearfix:after {clear: both;}
+
+/* --- end: Delete this when using Bootstrap 3 ------------------------------ */
+
+.display-inline {display: inline;}
+.display-inline-block {display: inline-block;}
+.display-block {display: block;}
+
+.monospace {font-family: Consolas, Monaco, 'Lucida Console' monospace;}
+
+.margin-hor-auto {margin-right: auto; margin-left: auto;}
+.margin-0 {margin: 0;}
+.margin-top-0 {margin-top: 0;}
+.margin-bottom-0 {margin-bottom: 0;}
+
+.width-1per {width: 1%;}
+.width-10per {width: 10%;}
+.width-20per {width: 20%;}
+.width-30per {width: 30%;}
+.width-40per {width: 40%;}
+.width-50per {width: 50%;}
+.width-60per {width: 60%;}
+.width-70per {width: 70%;}
+.width-80per {width: 80%;}
+.width-90per {width: 90%;}
+.width-100per {width: 100%;}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+	*,
+	*:before,
+	*:after,
+	*:first-letter,
+	*:first-line {
+		background: transparent !important;
+		color: #000 !important; /* Black prints faster:
+								   http://www.sanbeiji.com/archives/953 */
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
+
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
+
+	a[href]:after {
+		content: " (" attr(href) ")";
+	}
+
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
+
+	/*
+	 * Don't show links that are fragment identifiers,
+	 * or use the `javascript:` pseudo protocol
+	 */
+
+	a[href^="#"]:after,
+	a[href^="javascript:"]:after {
+		content: "";
+	}
+
+	pre,
+	blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+
+	/*
+	 * Printing Tables:
+	 * http://css-discuss.incutio.com/wiki/Printing_Tables
+	 */
+
+	thead {
+		display: table-header-group;
+	}
+
+	tr,
+	img {
+		page-break-inside: avoid;
+	}
+
+	img {
+		max-width: 100% !important;
+	}
+
+	p,
+	h2,
+	h3 {
+		orphans: 3;
+		widows: 3;
+	}
+
+	h2,
+	h3 {
+		page-break-after: avoid;
+	}
+}
