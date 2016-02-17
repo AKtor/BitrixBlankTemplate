@@ -60,7 +60,7 @@ foreach ($arResult as $arItemKey => $arItem):
 <?endforeach?>
 
 <?if ($previousLevel > 1):?>
-	<?=str_repeat('</ul></li>', ($previousLevel-1) );?>
+	<?=str_repeat('</ul></li>', ($previousLevel - 1));?>
 <?endif?>
 
 </ul>
