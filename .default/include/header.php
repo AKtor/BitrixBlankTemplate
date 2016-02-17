@@ -29,6 +29,11 @@
 </head>
 <body>
 	<?$APPLICATION->ShowPanel();?>
+
 	<a href="<?= SITE_DIR; ?>">Главная</a>
-	<h1 id="pagetitle">Заголовок страницы должен иметь id="pagetitle" на случай если будет использоваться ajax</h1>
-	<div class="breadcrumbs" id="navigation">Хлебные крошки должны иметь id="navigation" на случай если будет использоваться ajax</div>
+
+	<!-- Заголовок страницы должен иметь id="pagetitle" на случай если будет использоваться ajax -->
+	<h1 id="pagetitle"><?$APPLICATION->ShowTitle()?></h1>
+
+	<!-- Хлебные крошки должны иметь id="navigation" на случай если будет использоваться ajax -->
+	<div class="breadcrumbs" id="navigation"></div>
