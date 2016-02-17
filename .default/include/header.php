@@ -3,7 +3,7 @@
 <!doctype html>
 <html lang="<?=LANGUAGE_ID?>">
 <head>
-	<meta charset="<?=LANG_CHARSET;?>">
+	<meta charset="<?=LANG_CHARSET?>">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1"><!-- Удалить если не адаптированно для мобильных -->
 
@@ -28,7 +28,7 @@
 	?>
 </head>
 <body>
-	<?$APPLICATION->ShowPanel();?>
+	<?$APPLICATION->ShowPanel()?>
 
 	<a href="<?= SITE_DIR; ?>">Главная</a>
 
