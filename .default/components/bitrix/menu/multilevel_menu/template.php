@@ -47,7 +47,7 @@ foreach ($arResult as $arItemKey => $arItem):
 	<?// $arItem['CLASS'] добавлен в result_modifier.php?>
 	<li<?if ($arItem['CLASS']):?> class="<?=$arItem['CLASS']?>"<?endif?>>
 
-	<a href="<?if ($arItem['PERMISSION'] > 'D'):?><?=$arItem['LINK']?><?endif?>"<?if ($arItem['PARAMS']['ATTRIBUTES']):?> <?=$arItem['PARAMS']['ATTRIBUTES']?><?endif?>><?=$arItem['TEXT']?></a>
+	<a href="<?if ($arItem['PERMISSION'] > 'D' || $arItem['IS_PARENT']):?><?=$arItem['LINK']?><?endif?>"<?if ($arItem['PARAMS']['ATTRIBUTES']):?> <?=$arItem['PARAMS']['ATTRIBUTES']?><?endif?>><?=$arItem['TEXT']?></a>
 
 	<?if ($arItem['IS_PARENT']):?>
 		<ul>

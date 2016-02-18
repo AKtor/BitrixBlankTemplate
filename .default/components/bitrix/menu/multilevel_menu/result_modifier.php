@@ -22,7 +22,7 @@ if (!empty($arResult)) {
 			$classes[] = 'selected';
 		}
 
-		if ($arItem['PERMISSION'] == 'D') {
+		if ($arItem['PERMISSION'] == 'D' && !$arItem['IS_PARENT']) {
 			$classes[] = 'denied';
 		}
 
