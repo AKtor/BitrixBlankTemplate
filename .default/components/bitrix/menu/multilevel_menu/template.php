@@ -3,6 +3,8 @@
 <?
 /*
 Шаблон многоуровневого меню. Ничего лишнего, только html код.
+Повторяет логику стандартного шаблона horizontal_multilevel - выводит
+элементы меню с закрытым доступом, но не указывает для них URL.
 
 Генерирует код следующего вида:
 <ul>
@@ -44,7 +46,7 @@ foreach ($arResult as $arItemKey => $arItem):
 		<?=str_repeat('</ul></li>', ($previousLevel - $arItem['DEPTH_LEVEL']));?>
 	<?endif?>
 
-	<?// $arItem['CLASS'] добавлен в result_modifier.php?>
+	<?// Параметр CLASS добавлен в файле result_modifier.php?>
 	<li<?if ($arItem['CLASS']):?> class="<?=$arItem['CLASS']?>"<?endif?>>
 
 	<a href="<?if ($arItem['PERMISSION'] > 'D' || $arItem['IS_PARENT']):?><?=$arItem['LINK']?><?endif?>"<?if ($arItem['PARAMS']['ATTRIBUTES']):?> <?=$arItem['PARAMS']['ATTRIBUTES']?><?endif?>><?=$arItem['TEXT']?></a>
@@ -55,7 +57,7 @@ foreach ($arResult as $arItemKey => $arItem):
 		</li>
 	<?endif?>
 
-	<?$previousLevel = $arItem["DEPTH_LEVEL"]?>
+	<?$previousLevel = $arItem['DEPTH_LEVEL']?>
 
 <?endforeach?>
 
