@@ -1,8 +1,8 @@
 <?if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 
 /*
-Добавление всем элементам меню параметра CLASS, который содержит
-список CSS-классов. Например: parent selected
+Добавляет в массив каждого элемента меню элемент с ключем CLASS,
+который содержит список CSS-классов. Например: parent selected
 */
 
 if (!empty($arResult)) {
