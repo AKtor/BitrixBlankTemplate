@@ -49,7 +49,7 @@ foreach ($arResult as $arItemKey => $arItem):
 	<?// Параметр CLASS добавлен в файле result_modifier.php?>
 	<li<?if ($arItem['CLASS']):?> class="<?=$arItem['CLASS']?>"<?endif?>>
 
-	<a href="<?=$arItem['LINK']?>"<?if ($arItem['PARAMS']['ATTRIBUTES']):?> <?=$arItem['PARAMS']['ATTRIBUTES']?><?endif?>><?=$arItem['TEXT']?> (<?=$arItem['CLASS']?>)</a>
+	<a href="<?=$arItem['LINK']?>"<?if ($arItem['PARAMS']['ATTRIBUTES']):?> <?=$arItem['PARAMS']['ATTRIBUTES']?><?endif?>><?=$arItem['TEXT']?></a>
 
 	<?if ($arItem['IS_PARENT']):?>
 		<ul>
