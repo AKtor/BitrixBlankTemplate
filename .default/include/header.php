@@ -17,7 +17,8 @@
 	$APPLICATION->AddHeadScript('/bitrix/templates/.default/assets/js/common.js');
 	$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH . '/assets/js/template.js');
 
-	$APPLICATION->AddHeadString('<!--[if lte IE 8]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->');
+	$APPLICATION->AddHeadString('<!--[if lt IE 9]><script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->');
+	$APPLICATION->AddHeadString('<!--[if lt IE 9]><script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->');
 
 	$APPLICATION->ShowMeta('robots');
 	$APPLICATION->ShowMeta('keywords');
